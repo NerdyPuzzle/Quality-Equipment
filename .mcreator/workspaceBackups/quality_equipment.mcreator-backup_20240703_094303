@@ -1,0 +1,633 @@
+{
+  "mod_elements": [
+    {
+      "name": "ReforgingStationGUI",
+      "type": "gui",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reforging_station_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qualityequipment/client/gui/ReforgingStationGUIScreen.java",
+          "src/main/java/net/qualityequipment/world/inventory/ReforgingStationGUIMenu.java",
+          "src/main/java/net/qualityequipment/network/ReforgingStationGUISlotMessage.java"
+        ]
+      },
+      "path": "~/gui"
+    },
+    {
+      "name": "ReforgingStation",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reforging_station",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/quality_equipment/blockstates/reforging_station.json",
+          "src/main/java/net/qualityequipment/block/entity/ReforgingStationBlockEntity.java",
+          "src/main/resources/assets/quality_equipment/models/item/reforging_station.json",
+          "src/main/java/net/qualityequipment/block/ReforgingStationBlock.java",
+          "src/main/resources/assets/quality_equipment/models/block/reforging_station.json",
+          "src/main/resources/data/quality_equipment/loot_tables/blocks/reforging_station.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "ReforgingStationRecipe",
+      "type": "recipe",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reforging_station_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/quality_equipment/recipes/reforging_station_recipe.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "Cover1",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cover_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/qualityequipment/procedures/Cover1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui"
+    },
+    {
+      "name": "Cover",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cover",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/qualityequipment/procedures/CoverProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui"
+    },
+    {
+      "name": "SlotDown",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slot_down",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qualityequipment/procedures/SlotDownProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui"
+    },
+    {
+      "name": "SlotUp",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slot_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qualityequipment/procedures/SlotUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui"
+    },
+    {
+      "name": "ReforgingStationGUIWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reforging_station_gui_while_this_gui_is_open_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui"
+    },
+    {
+      "name": "Showoffhammer",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "showoffhammer",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/qualityequipment/procedures/ShowoffhammerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui"
+    },
+    {
+      "name": "Showonhammer",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "showonhammer",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/qualityequipment/procedures/ShowonhammerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui"
+    },
+    {
+      "name": "Takenslotresult",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "takenslotresult",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/gui"
+    },
+    {
+      "name": "ReforgeGuiButton",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reforge_gui_button",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/quality_equipment/models/item/reforge_gui_button.json",
+          "src/main/java/net/qualityequipment/item/ReforgeGuiButtonItem.java"
+        ]
+      },
+      "path": "~/gui"
+    },
+    {
+      "name": "ReforgeGuiButtonItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reforge_gui_button_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qualityequipment/procedures/ReforgeGuiButtonItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui"
+    },
+    {
+      "name": "Clickedchange",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clickedchange",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/qualityequipment/procedures/ClickedchangeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui"
+    },
+    {
+      "name": "Reforges",
+      "type": "config",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "reforges",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qualityequipment/configuration/ReforgesConfiguration.java"
+        ]
+      }
+    },
+    {
+      "name": "DigSpeed",
+      "type": "attribute",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dig_speed",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Attribute"
+    },
+    {
+      "name": "ApplyDigSpeed",
+      "type": "procedure",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "apply_dig_speed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qualityequipment/procedures/ApplyDigSpeedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Attribute"
+    },
+    {
+      "name": "ApplyModifiers",
+      "type": "procedure",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "apply_modifiers",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qualityequipment/procedures/ApplyModifiersProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/logic"
+    },
+    {
+      "name": "ProjectileDamage",
+      "type": "attribute",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "projectile_damage",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Attribute"
+    },
+    {
+      "name": "ModifyTooltips",
+      "type": "procedure",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modify_tooltips",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qualityequipment/procedures/ModifyTooltipsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/logic"
+    },
+    {
+      "name": "ApplyProjectileDamage",
+      "type": "procedure",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "apply_projectile_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qualityequipment/procedures/ApplyProjectileDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          }
+        ]
+      },
+      "path": "~/Attribute"
+    },
+    {
+      "name": "AutoReforge",
+      "type": "procedure",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_reforge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qualityequipment/procedures/AutoReforgeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/logic"
+    },
+    {
+      "name": "ParseModifiers",
+      "type": "procedure",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "parse_modifiers",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qualityequipment/procedures/ParseModifiersProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/logic"
+    },
+    {
+      "name": "JumpHeight",
+      "type": "attribute",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jump_height",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Attribute"
+    },
+    {
+      "name": "ApplyJumpHeight",
+      "type": "procedure",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "apply_jump_height",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qualityequipment/procedures/ApplyJumpHeightProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Attribute"
+    },
+    {
+      "name": "InitTetraCompat",
+      "type": "procedure",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "init_tetra_compat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qualityequipment/procedures/InitTetraCompatProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/logic"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "sword",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ingot",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "update1",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "update2",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "successhammer",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "successhammer2",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "tetraItems",
+      "type": "arraylist",
+      "scope": "global",
+      "value": "new ArrayList\u003c\u003e()"
+    },
+    {
+      "name": "tetraBows",
+      "type": "arraylist",
+      "scope": "global",
+      "value": "new ArrayList\u003c\u003e()"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:ReforgingStation"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:ReforgingStation"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "attribute.quality_equipment.dig_speed": "Dig Speed",
+      "quality_equipment.quality.broad": "§eBroad",
+      "quality_equipment.quality.graceful": "§bGraceful",
+      "quality_equipment.quality.tough": "§9Tough",
+      "quality_equipment.quality.keen": "§9Keen",
+      "quality_equipment.quality.sharp": "§9Sharp",
+      "quality_equipment.quality.pokey": "§ePokey",
+      "quality_equipment.quality.dented": "§8Dented",
+      "quality_equipment.quality.speedy": "§9Speedy",
+      "item.quality_equipment.reforge_gui_button": "Reforge Item",
+      "forge.entity_reach": "Reach Distance",
+      "quality_equipment.quality.vicious": "§eVicious",
+      "quality_equipment.quality.sweeping": "§bSweeping",
+      "quality_equipment.quality.rusted": "§cRusted",
+      "quality_equipment.quality.chipped": "§cChipped",
+      "quality_equipment.quality.lucky": "§bLucky",
+      "quality_equipment.quality.protective": "§9Protective",
+      "quality_equipment.quality.clumsy": "§cClumsy",
+      "quality_equipment.quality.springy": "§9Springy",
+      "quality_equipment.quality.legendary": "§dLegendary",
+      "quality_equipment.quality.long": "§9Long",
+      "quality_equipment.quality.powerful": "§bPowerful",
+      "quality_equipment.quality.cumbersome": "§8Cumbersome",
+      "quality_equipment.quality.thick": "§eThick",
+      "gui.quality_equipment.reforging_station_gui.label_inventory": "Inventory",
+      "quality_equipment.quality.tall": "§9Tall",
+      "attribute.quality_equipment.projectile_damage": "Projectile Damage",
+      "quality_equipment.quality.broken": "§8Broken",
+      "attribute.quality_equipment.jump_height": "Jump Height",
+      "quality_equipment.quality.bulky": "§8Bulky",
+      "quality_equipment.quality.masterful": "§dMasterful",
+      "quality_equipment.quality.short": "§cShort",
+      "block.quality_equipment.reforging_station": "Reforging Station",
+      "quality_equipment.quality.cracked": "§8Cracked",
+      "quality_equipment.quality.thin": "§eThin",
+      "quality_equipment.quality": "§7Quality: ",
+      "quality_equipment.quality.crumbling": "§4Crumbling",
+      "quality_equipment.quality.worthless": "§4Worthless",
+      "quality_equipment.quality.heavy": "§cHeavy",
+      "gui.quality_equipment.reforging_station_gui.label_reforging_station": "Reforging Station",
+      "quality_equipment.quality.light": "§9Light",
+      "quality_equipment.quality.solid": "§9Solid"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "gui",
+        "children": []
+      },
+      {
+        "name": "block",
+        "children": []
+      },
+      {
+        "name": "logic",
+        "children": []
+      },
+      {
+        "name": "Attribute",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "quality_equipment",
+    "modName": "Quality Equipment",
+    "version": "1.4",
+    "author": "PooPmeep",
+    "websiteURL": "https://minecraft.net",
+    "license": "Academic Free License v3.0",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "boop",
+    "modElementsPackage": "net.qualityequipment"
+  },
+  "mcreatorVersion": 202400117319
+}

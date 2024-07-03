@@ -1,0 +1,171 @@
+[02Jul2024 20:29:33.206] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\TheMLGgamer\.mcreator\gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[02Jul2024 20:29:33.210] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.10 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[02Jul2024 20:29:33.645] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[02Jul2024 20:29:34.132] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[02Jul2024 20:29:34.273] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[02Jul2024 20:29:34.776] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: Radeon RX 580 Series GL version 4.6.0 Core Profile Context 24.1.1.231127, ATI Technologies Inc.
+[02Jul2024 20:29:34.782] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/TheMLGgamer/.mcreator/gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[02Jul2024 20:29:35.612] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\TheMLGgamer\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.0\7f9181f85acc66547685a72020713fc8cbde98\javafmllanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[02Jul2024 20:29:35.615] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\TheMLGgamer\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.0\7872f5205685fdd26fae39b1be79b0e60ca5b7bd\lowcodelanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[02Jul2024 20:29:35.618] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\TheMLGgamer\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.0\d501d161cabed08b3c139a2c6217b02a39f3c3e9\mclanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[02Jul2024 20:29:35.622] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\TheMLGgamer\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.0\ffd3c6debac0a388c9e33ac43c9f5eafb91cb466\fmlcore-1.20.1-47.2.0.jar is missing mods.toml file
+[02Jul2024 20:29:35.859] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[02Jul2024 20:29:38.282] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\TheMLGgamer\.mcreator\gradle\caches\forge_gradle\assets, --assetIndex, 5]
+[02Jul2024 20:29:41.242] [main/WARN] [oshi.driver.windows.perfmon.PerfmonDisabled/]: Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[02Jul2024 20:29:44.979] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 191 milliseconds
+[02Jul2024 20:29:47.017] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/TheMLGgamer/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_official_1.20.1/forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[02Jul2024 20:29:47.017] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/TheMLGgamer/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_official_1.20.1/forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[02Jul2024 20:29:47.032] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[02Jul2024 20:29:47.038] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[02Jul2024 20:29:47.212] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
+[02Jul2024 20:29:48.365] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.0, for MC 1.20.1 with MCP 20230612.114412
+[02Jul2024 20:29:48.366] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.0 Initialized
+[02Jul2024 20:29:49.963] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: []
+[02Jul2024 20:29:50.164] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
+[02Jul2024 20:29:50.841] [Worker-Main-2/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
+[02Jul2024 20:29:51.406] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[02Jul2024 20:29:52.565] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.2.0 Target: 47.3.0
+[02Jul2024 20:29:54.376] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[02Jul2024 20:29:54.377] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[02Jul2024 20:29:54.784] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speakers (Realtek High Definition Audio)
+[02Jul2024 20:29:54.784] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[02Jul2024 20:29:54.888] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x2 minecraft:textures/atlas/blocks.png-atlas
+[02Jul2024 20:29:54.895] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/signs.png-atlas
+[02Jul2024 20:29:54.895] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
+[02Jul2024 20:29:54.895] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
+[02Jul2024 20:29:54.896] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/armor_trims.png-atlas
+[02Jul2024 20:29:54.901] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x2 minecraft:textures/atlas/decorated_pot.png-atlas
+[02Jul2024 20:29:54.901] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
+[02Jul2024 20:29:54.901] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
+[02Jul2024 20:29:54.902] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
+[02Jul2024 20:29:55.344] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[02Jul2024 20:29:55.513] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[02Jul2024 20:29:55.514] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[02Jul2024 20:29:55.515] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[02Jul2024 20:29:56.046] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[02Jul2024 20:29:59.857] [Render thread/WARN] [net.minecraftforge.common.ForgeHooks/WP]: The following mods have version differences that were not resolved:
+bettercombat (version 1.8.1+1.20.1 -> MISSING)
+cloth_config (version 11.1.106 -> MISSING)
+playeranimator (version 1.0.2-rc1+1.20 -> MISSING)
+Things may not work well.
+[02Jul2024 20:29:59.863] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[02Jul2024 20:29:59.944] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:anchor_slam
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:axe_slash
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:claymore_slam
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:claymore_stab
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:claymore_swing
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:dagger_slash
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:double_axe_swing
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:fist_punch
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:glaive_slash_quick
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:glaive_slash_slow
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:hammer_slam
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:katana_slash
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:mace_slam
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:mace_slash
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:pickaxe_swing
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:rapier_slash
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:rapier_stab
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:scythe_slash
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:sickle_slash
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:spear_stab
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:staff_slam
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:staff_slash
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:staff_spin
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:staff_stab
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:sword_slash
+[02Jul2024 20:29:59.945] [Render thread/INFO] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event: Found a missing id from the world bettercombat:wand_swing
+[02Jul2024 20:29:59.987] [Render thread/ERROR] [net.minecraftforge.registries.GameData/REGISTRIES]: Unidentified mapping from registry minecraft:sound_event
+	bettercombat:anchor_slam: 831
+	bettercombat:axe_slash: 1475
+	bettercombat:claymore_slam: 1478
+	bettercombat:claymore_stab: 1477
+	bettercombat:claymore_swing: 1476
+	bettercombat:dagger_slash: 1479
+	bettercombat:double_axe_swing: 1480
+	bettercombat:fist_punch: 1481
+	bettercombat:glaive_slash_quick: 1482
+	bettercombat:glaive_slash_slow: 1483
+	bettercombat:hammer_slam: 1484
+	bettercombat:katana_slash: 1485
+	bettercombat:mace_slam: 1486
+	bettercombat:mace_slash: 1487
+	bettercombat:pickaxe_swing: 1488
+	bettercombat:rapier_slash: 1489
+	bettercombat:rapier_stab: 1490
+	bettercombat:scythe_slash: 1491
+	bettercombat:sickle_slash: 1497
+	bettercombat:spear_stab: 1492
+	bettercombat:staff_slam: 1493
+	bettercombat:staff_slash: 1494
+	bettercombat:staff_spin: 1495
+	bettercombat:staff_stab: 1496
+	bettercombat:sword_slash: 1498
+	bettercombat:wand_swing: 1499
+
+[02Jul2024 20:29:59.988] [Render thread/WARN] [net.minecraftforge.registries.GameData/REGISTRIES]: Forge Mod Loader detected missing registry entries.
+
+There are 26 missing entries in this save.
+If you continue the missing entries will get removed.
+A world backup will be automatically created in your saves directory.
+
+
+[02Jul2024 20:29:59.989] [Render thread/WARN] [net.minecraftforge.registries.GameData/REGISTRIES]: Missing minecraft:sound_event:
+    bettercombat:anchor_slam
+    bettercombat:axe_slash
+    bettercombat:claymore_slam
+    bettercombat:claymore_stab
+    bettercombat:claymore_swing
+    bettercombat:dagger_slash
+    bettercombat:double_axe_swing
+    bettercombat:fist_punch
+    bettercombat:glaive_slash_quick
+    bettercombat:glaive_slash_slow
+    bettercombat:hammer_slam
+    bettercombat:katana_slash
+    bettercombat:mace_slam
+    bettercombat:mace_slash
+    bettercombat:pickaxe_swing
+    bettercombat:rapier_slash
+    bettercombat:rapier_stab
+    bettercombat:scythe_slash
+    bettercombat:sickle_slash
+    bettercombat:spear_stab
+    bettercombat:staff_slam
+    bettercombat:staff_slash
+    bettercombat:staff_spin
+    bettercombat:staff_stab
+    bettercombat:sword_slash
+    bettercombat:wand_swing
+
+
+[02Jul2024 20:29:59.989] [Render thread/ERROR] [net.minecraftforge.registries.GameData/REGISTRIES]: There are unidentified mappings in this world - we are going to attempt to process anyway
+[02Jul2024 20:30:00.421] [Render thread/WARN] [net.minecraft.server.MinecraftServer/]: Missing data pack mod:cloth_config
+[02Jul2024 20:30:00.421] [Render thread/WARN] [net.minecraft.server.MinecraftServer/]: Missing data pack mod:playeranimator
+[02Jul2024 20:30:00.421] [Render thread/WARN] [net.minecraft.server.MinecraftServer/]: Missing data pack mod:bettercombat
+[02Jul2024 20:30:01.952] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
+[02Jul2024 20:30:02.052] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1271 advancements
+[02Jul2024 20:30:02.603] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
+[02Jul2024 20:30:02.603] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[02Jul2024 20:30:04.476] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[02Jul2024 20:30:05.216] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[02Jul2024 20:30:05.286] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[02Jul2024 20:30:05.689] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[02Jul2024 20:30:05.997] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[02Jul2024 20:30:06.588] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[02Jul2024 20:30:07.091] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 15%
+[02Jul2024 20:30:07.482] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 18%
+[02Jul2024 20:30:07.995] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 36%
+[02Jul2024 20:30:08.495] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 53%
+[02Jul2024 20:30:08.994] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 84%
+[02Jul2024 20:30:09.127] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[02Jul2024 20:30:09.130] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 4650 ms
+[02Jul2024 20:30:09.860] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 2, from 10
+[02Jul2024 20:30:09.863] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[02Jul2024 20:30:10.309] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
+[02Jul2024 20:30:10.929] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
+[02Jul2024 20:30:11.019] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:6c8f46f7] logged in with entity id 156 at (200.49250898818875, 71.0, 182.6794842255173)
+[02Jul2024 20:30:11.092] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[02Jul2024 20:30:11.393] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 335 advancements
+[02Jul2024 20:30:16.141] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[02Jul2024 20:30:16.143] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode

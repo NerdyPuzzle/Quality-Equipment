@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "slab_top": "smooth_stone",
+        "obsidian": "obsidian",
+        "anvil_top": "anvil_top",
+        "slab_side": "smooth_stone_slab_side",
+        "wood": "oak_log",
+        "anvil_body": "anvil"
+      },
+      "name": "default"
+    }
+  }
+}

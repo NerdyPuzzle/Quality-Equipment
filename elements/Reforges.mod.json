@@ -1,0 +1,31 @@
+{
+  "_fv": 60,
+  "_type": "config",
+  "definition": {
+    "pools": [
+      {
+        "category": "Material overrides",
+        "entries": [
+          {
+            "item": {
+              "value": "Blocks.OBSIDIAN"
+            },
+            "silkTouchMode": 4,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "This material will be used to reforge an item that does not have a material override or repair item",
+            "vardisplay": "Fallback material",
+            "varname": "fallback_material",
+            "enablecomment": true
+          }
+        ]
+      }
+    ],
+    "file": "quality_equipment",
+    "configType": 0
+  }
+}

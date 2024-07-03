@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "quality_equipment:blocks/reforging_station",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "quality_equipment:reforging_station"
+        }
+      ]
+    }
+  ]
+}

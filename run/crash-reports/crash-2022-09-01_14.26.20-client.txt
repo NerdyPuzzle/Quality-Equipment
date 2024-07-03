@@ -1,0 +1,129 @@
+---- Minecraft Crash Report ----
+// Hey, that tickles! Hehehe!
+
+Time: 9/1/22 2:26 PM
+Description: Unexpected error
+
+java.lang.NullPointerException: Unexpected error
+	at net.qualitytoolsupdated.procedures.DamageProcedure.executeProcedure(DamageProcedure.java:115) ~[main/:?] {re:classloading}
+	at net.qualitytoolsupdated.procedures.DamageProcedure$GlobalTrigger.onEntityAttacked(DamageProcedure.java:48) ~[main/:?] {re:classloading,pl:eventbus:A}
+	at net.minecraftforge.eventbus.ASMEventHandler_30_GlobalTrigger_onEntityAttacked_LivingAttackEvent.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.common.ForgeHooks.onLivingAttack(ForgeHooks.java:345) ~[forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading}
+	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:991) ~[forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading}
+	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:71) ~[forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading}
+	at net.qualitytoolsupdated.entity.HitboxreachEntity$CustomEntity.attackEntityFrom(HitboxreachEntity.java:135) ~[main/:?] {re:classloading}
+	at net.minecraft.entity.player.PlayerEntity.attackTargetEntityWithCurrentItem(PlayerEntity.java:1167) ~[forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.multiplayer.PlayerController.attackEntity(PlayerController.java:373) ~[forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.clickMouse(Minecraft.java:1345) ~[forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.processKeyBinds(Minecraft.java:1690) ~[forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1509) ~[forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:980) ~[forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.run(Minecraft.java:612) ~[forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:184) ~[forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_332] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_332] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_332] {}
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_332] {}
+	at net.minecraftforge.userdev.FMLUserdevClientLaunchProvider.lambda$launchService$0(FMLUserdevClientLaunchProvider.java:52) ~[forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?] {}
+	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:108) [forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.qualitytoolsupdated.procedures.DamageProcedure.executeProcedure(DamageProcedure.java:115) ~[main/:?] {re:classloading}
+	at net.qualitytoolsupdated.procedures.DamageProcedure$GlobalTrigger.onEntityAttacked(DamageProcedure.java:48) ~[main/:?] {re:classloading,pl:eventbus:A}
+	at net.minecraftforge.eventbus.ASMEventHandler_30_GlobalTrigger_onEntityAttacked_LivingAttackEvent.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.common.ForgeHooks.onLivingAttack(ForgeHooks.java:345) ~[forge:?] {re:classloading}
+	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:991) ~[forge:?] {re:classloading}
+	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:71) ~[forge:?] {re:classloading}
+	at net.qualitytoolsupdated.entity.HitboxreachEntity$CustomEntity.attackEntityFrom(HitboxreachEntity.java:135) ~[?:?] {re:classloading}
+	at net.minecraft.entity.player.PlayerEntity.attackTargetEntityWithCurrentItem(PlayerEntity.java:1167) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.multiplayer.PlayerController.attackEntity(PlayerController.java:373) ~[forge:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.clickMouse(Minecraft.java:1345) ~[forge:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.processKeyBinds(Minecraft.java:1690) ~[forge:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+-- Affected level --
+Details:
+	All players: 1 total; [ClientPlayerEntity['Dev'/230, l='ClientLevel', x=-96.29, y=63.00, z=-178.15]]
+	Chunk stats: Client Chunk Cache: 225, 121
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (-176,66,-240), Chunk: (at 0,4,0 in -11,-15; contains blocks -176,0,-240 to -161,255,-225), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,0,-512 to -1,255,-1)
+	Level time: 20810 game time, 9275 day time
+	Server brand: forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.world.ClientWorld.fillCrashReport(ClientWorld.java:465) ~[forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2093) ~[forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.run(Minecraft.java:633) ~[forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:184) ~[forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_332] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_332] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_332] {}
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_332] {}
+	at net.minecraftforge.userdev.FMLUserdevClientLaunchProvider.lambda$launchService$0(FMLUserdevClientLaunchProvider.java:52) ~[forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?] {}
+	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:108) [forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_332, Temurin
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Temurin
+	Memory: 495226792 bytes (472 MB) / 1848115200 bytes (1762 MB) up to 3803185152 bytes (3627 MB)
+	CPUs: 6
+	JVM Flags: 2 total; -XX:+IgnoreUnrecognizedVMOptions -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	ModLauncher: 8.1.3+8.1.3+main-8.1.x.c94d18ec
+	ModLauncher launch target: fmluserdevclient
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/mixin-0.8.4.jar mixin PLUGINSERVICE 
+		/eventbus-4.0.0.jar eventbus PLUGINSERVICE 
+		/forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-3.0.1.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.4.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-launcher.jar fml TRANSFORMATIONSERVICE 
+	FML: 36.2
+	Forge: net.minecraftforge:36.2.26
+	FML Language Providers: 
+		javafml@36.2
+		minecraft@1
+	Mod List: 
+		client-extra.jar                                  |Minecraft                     |minecraft                     |1.16.5              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16|Forge                         |forge                         |36.2.26             |DONE      |Manifest: NOSIGNATURE
+		main                                              |Quality Tools Updated         |quality_tools_updated         |1.0.0               |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 1a0892ec-1ff5-43e4-a5f3-8d7e2f99c257
+	Launched Version: MOD_DEV
+	Backend library: LWJGL version 3.2.2 build 10
+	Backend API: Radeon RX 580 Series GL version 4.6.14800 Compatibility Profile Context 22.4.1 30.0.15021.1001, ATI Technologies Inc.
+	GL Caps: Using framebuffer using OpenGL 3.0
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	Graphics mode: fast
+	Resource Packs: 
+	Current Language: English (US)
+	CPU: 6x Intel(R) Core(TM) i5-9600K CPU @ 3.70GHz

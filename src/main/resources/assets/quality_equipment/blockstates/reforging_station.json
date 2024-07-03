@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "quality_equipment:block/reforging_station"
+    },
+    "facing=east": {
+      "model": "quality_equipment:block/reforging_station",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "quality_equipment:block/reforging_station",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "quality_equipment:block/reforging_station",
+      "y": 270
+    }
+  }
+}

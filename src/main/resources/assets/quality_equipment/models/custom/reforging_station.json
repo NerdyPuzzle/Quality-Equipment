@@ -1,0 +1,709 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "block/block",
+  "ambientocclusion": false,
+  "elements": [
+    {
+      "name": "Anvil base",
+      "from": [
+        4,
+        0,
+        2
+      ],
+      "to": [
+        12,
+        4,
+        5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            12,
+            12,
+            16
+          ],
+          "texture": "#anvil_body"
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            0,
+            5
+          ],
+          "rotation": 270,
+          "texture": "#anvil_body"
+        },
+        "south": {
+          "uv": [
+            4,
+            12,
+            12,
+            16
+          ],
+          "texture": "#anvil_body"
+        },
+        "west": {
+          "uv": [
+            0,
+            2,
+            4,
+            5
+          ],
+          "rotation": 90,
+          "texture": "#anvil_body"
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            12,
+            5
+          ],
+          "rotation": 180,
+          "texture": "#anvil_body"
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            12,
+            5
+          ],
+          "rotation": 180,
+          "texture": "#anvil_body",
+          "cullface": "down"
+        }
+      }
+    },
+    {
+      "name": "Anvil top",
+      "from": [
+        3,
+        10,
+        0
+      ],
+      "to": [
+        13,
+        16,
+        5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            3,
+            0,
+            13,
+            6
+          ],
+          "texture": "#anvil_body"
+        },
+        "east": {
+          "uv": [
+            16,
+            0,
+            10,
+            5
+          ],
+          "rotation": 270,
+          "texture": "#anvil_body"
+        },
+        "south": {
+          "uv": [
+            3,
+            0,
+            13,
+            6
+          ],
+          "texture": "#anvil_body"
+        },
+        "west": {
+          "uv": [
+            10,
+            0,
+            16,
+            5
+          ],
+          "rotation": 90,
+          "texture": "#anvil_body"
+        },
+        "up": {
+          "uv": [
+            3,
+            0,
+            13,
+            5
+          ],
+          "rotation": 180,
+          "texture": "#anvil_top",
+          "cullface": "up"
+        },
+        "down": {
+          "uv": [
+            3,
+            0,
+            13,
+            5
+          ],
+          "rotation": 180,
+          "texture": "#anvil_body"
+        }
+      }
+    },
+    {
+      "name": "Wider section beneath top portion",
+      "from": [
+        6,
+        5,
+        4
+      ],
+      "to": [
+        10,
+        10,
+        5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            6,
+            10,
+            11
+          ],
+          "texture": "#anvil_body"
+        },
+        "east": {
+          "uv": [
+            10,
+            4,
+            5,
+            5
+          ],
+          "rotation": 270,
+          "texture": "#anvil_body"
+        },
+        "south": {
+          "uv": [
+            6,
+            6,
+            10,
+            11
+          ],
+          "texture": "#anvil_body"
+        },
+        "west": {
+          "uv": [
+            5,
+            4,
+            10,
+            5
+          ],
+          "rotation": 90,
+          "texture": "#anvil_body"
+        },
+        "up": {
+          "uv": [
+            10,
+            5,
+            6,
+            4
+          ],
+          "rotation": 180,
+          "texture": "#anvil_body"
+        },
+        "down": {
+          "uv": [
+            10,
+            5,
+            6,
+            4
+          ],
+          "rotation": 180,
+          "texture": "#anvil_body"
+        }
+      }
+    },
+    {
+      "name": "Lower narrow portion",
+      "from": [
+        5,
+        4,
+        3
+      ],
+      "to": [
+        11,
+        5,
+        5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            5,
+            11,
+            11,
+            12
+          ],
+          "texture": "#anvil_body"
+        },
+        "east": {
+          "uv": [
+            5,
+            3,
+            4,
+            5
+          ],
+          "rotation": 270,
+          "texture": "#anvil_body"
+        },
+        "south": {
+          "uv": [
+            5,
+            11,
+            11,
+            12
+          ],
+          "texture": "#anvil_body"
+        },
+        "west": {
+          "uv": [
+            4,
+            3,
+            5,
+            5
+          ],
+          "rotation": 90,
+          "texture": "#anvil_body"
+        },
+        "up": {
+          "uv": [
+            5,
+            3,
+            11,
+            5
+          ],
+          "rotation": 180,
+          "texture": "#anvil_body"
+        },
+        "down": {
+          "uv": [
+            5,
+            3,
+            11,
+            5
+          ],
+          "rotation": 180,
+          "texture": "#anvil_body"
+        }
+      }
+    },
+    {
+      "name": "tabletop",
+      "from": [
+        0,
+        8,
+        5
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            8,
+            16,
+            16
+          ],
+          "texture": "#slab_side"
+        },
+        "east": {
+          "uv": [
+            5,
+            8,
+            16,
+            16
+          ],
+          "texture": "#slab_side",
+          "cullface": "east"
+        },
+        "south": {
+          "uv": [
+            0,
+            8,
+            16,
+            16
+          ],
+          "texture": "#slab_side",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [
+            5,
+            8,
+            16,
+            16
+          ],
+          "texture": "#slab_side",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [
+            0,
+            5,
+            16,
+            16
+          ],
+          "texture": "#slab_top",
+          "cullface": "up"
+        },
+        "down": {
+          "uv": [
+            0,
+            5,
+            16,
+            16
+          ],
+          "texture": "#slab_top"
+        }
+      }
+    },
+    {
+      "name": "hammer handle",
+      "from": [
+        1,
+        16,
+        8
+      ],
+      "to": [
+        2,
+        17,
+        14
+      ],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "y",
+        "origin": [
+          2,
+          16,
+          8
+        ],
+        "rescale": true
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            3,
+            2,
+            4
+          ],
+          "texture": "#wood",
+          "cullface": "up"
+        },
+        "east": {
+          "uv": [
+            0,
+            8,
+            6,
+            9
+          ],
+          "texture": "#wood",
+          "cullface": "up"
+        },
+        "south": {
+          "uv": [
+            4,
+            3,
+            5,
+            4
+          ],
+          "texture": "#wood",
+          "cullface": "up"
+        },
+        "west": {
+          "uv": [
+            0,
+            6,
+            6,
+            7
+          ],
+          "texture": "#wood",
+          "cullface": "up"
+        },
+        "up": {
+          "uv": [
+            8,
+            0,
+            9,
+            6
+          ],
+          "texture": "#wood",
+          "cullface": "up"
+        },
+        "down": {
+          "uv": [
+            5,
+            0,
+            6,
+            6
+          ],
+          "texture": "#wood",
+          "cullface": "up"
+        }
+      }
+    },
+    {
+      "name": "hammer head",
+      "from": [
+        0,
+        15.5,
+        11.5
+      ],
+      "to": [
+        3,
+        17.5,
+        13.5
+      ],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "y",
+        "origin": [
+          2,
+          16,
+          8
+        ],
+        "rescale": true
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            12,
+            7,
+            14
+          ],
+          "texture": "#anvil_body",
+          "cullface": "up"
+        },
+        "east": {
+          "uv": [
+            7,
+            2,
+            9,
+            4
+          ],
+          "texture": "#anvil_body",
+          "cullface": "up"
+        },
+        "south": {
+          "uv": [
+            6,
+            12,
+            9,
+            14
+          ],
+          "texture": "#anvil_body",
+          "cullface": "up"
+        },
+        "west": {
+          "uv": [
+            0,
+            2,
+            4,
+            4
+          ],
+          "texture": "#anvil_body",
+          "cullface": "up"
+        },
+        "up": {
+          "uv": [
+            6,
+            2,
+            9,
+            4
+          ],
+          "texture": "#anvil_body",
+          "cullface": "up"
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            7,
+            4
+          ],
+          "texture": "#anvil_body",
+          "cullface": "up"
+        }
+      }
+    },
+    {
+      "name": "base",
+      "from": [
+        1,
+        0,
+        5
+      ],
+      "to": [
+        15,
+        8,
+        15
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            0,
+            15,
+            8
+          ],
+          "texture": "#obsidian"
+        },
+        "east": {
+          "uv": [
+            5,
+            0,
+            15,
+            8
+          ],
+          "texture": "#obsidian"
+        },
+        "south": {
+          "uv": [
+            1,
+            0,
+            15,
+            8
+          ],
+          "texture": "#obsidian"
+        },
+        "west": {
+          "uv": [
+            5,
+            0,
+            15,
+            8
+          ],
+          "texture": "#obsidian"
+        },
+        "up": {
+          "uv": [
+            1,
+            5,
+            15,
+            15
+          ],
+          "texture": "#obsidian"
+        },
+        "down": {
+          "uv": [
+            1,
+            5,
+            15,
+            15
+          ],
+          "texture": "#obsidian",
+          "cullface": "down"
+        }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [
+        0,
+        0,
+        -0.75
+      ],
+      "scale": [
+        0.36523,
+        0.25781,
+        0.36719
+      ]
+    },
+    "thirdperson_lefthand": {
+      "translation": [
+        0,
+        0,
+        -0.75
+      ],
+      "scale": [
+        0.36523,
+        0.25781,
+        0.36719
+      ]
+    },
+    "firstperson_righthand": {
+      "scale": [
+        0.65039,
+        0.6543,
+        0.4043
+      ]
+    },
+    "firstperson_lefthand": {
+      "translation": [
+        -1.75,
+        0,
+        0
+      ],
+      "scale": [
+        0.65039,
+        0.6543,
+        0.4043
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        4.25,
+        0
+      ],
+      "scale": [
+        0.58008,
+        0.43359,
+        0.58984
+      ]
+    },
+    "gui": {
+      "rotation": [
+        24,
+        46.75,
+        0
+      ],
+      "translation": [
+        -0.5,
+        -0.25,
+        0
+      ],
+      "scale": [
+        0.625,
+        0.53125,
+        0.65625
+      ]
+    }
+  },
+  "groups": [
+    {
+      "name": "group",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "color": 0,
+      "children": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ]
+}

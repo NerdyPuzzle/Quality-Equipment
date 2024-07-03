@@ -1,0 +1,15 @@
+Java Launcher: C:\Users\TheMLGgamer\Desktop\MCreator20241\jdk\bin\java.exe
+Arguments: '--task, SRG_TO_MCP, --input, C:\Users\TheMLGgamer\.mcreator\gradle\caches\modules-2\files-2.1\curse.maven\cloth-config-forge-348521\4633444\b6f17b52c469c5ca27c9e90abdb0ecc0be16149d\cloth-config-forge-348521-4633444.jar, --output, C:\Users\TheMLGgamer\.mcreator\gradle\caches\forge_gradle\deobf_dependencies\curse\maven\cloth-config-forge-348521\4633444_mapped_official_1.20.1\cloth-config-forge-348521-4633444_mapped_official_1.20.1.jar, --mcp, C:\Users\TheMLGgamer\.mcreator\gradle\caches\forge_gradle\mcp_repo\net\minecraft\mapping\1.20.1\mapping-1.20.1-mapping.zip, --strip-signatures'
+Classpath:
+ - C:\Users\TheMLGgamer\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\installertools\1.3.2\installertools-1.3.2-fatjar.jar
+Working directory: C:\Users\TheMLGgamer\MCreatorWorkspaces\quality_tools_updated\build\_RenameSrg2Mcp_-849800545
+Main class: net.minecraftforge.installertools.ConsoleTool
+====================================
+Task: SRG_TO_MCP
+Input:  C:\Users\TheMLGgamer\.mcreator\gradle\caches\modules-2\files-2.1\curse.maven\cloth-config-forge-348521\4633444\b6f17b52c469c5ca27c9e90abdb0ecc0be16149d\cloth-config-forge-348521-4633444.jar
+Output: C:\Users\TheMLGgamer\.mcreator\gradle\caches\forge_gradle\deobf_dependencies\curse\maven\cloth-config-forge-348521\4633444_mapped_official_1.20.1\cloth-config-forge-348521-4633444_mapped_official_1.20.1.jar
+MCP:    C:\Users\TheMLGgamer\.mcreator\gradle\caches\forge_gradle\mcp_repo\net\minecraft\mapping\1.20.1\mapping-1.20.1-mapping.zip
+Loading MCP Data
+Processing ZIP file
+Stripped Manifest of sha digests
+Process complete

@@ -1,0 +1,88 @@
+---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 9/1/22 2:48 AM
+Description: Exception in server tick loop
+
+java.lang.BootstrapMethodError: java.lang.LinkageError: loader constraint violation: loader (instance of sun/misc/Launcher$AppClassLoader) previously initiated loading for a different type with name "org/apache/logging/log4j/util/MessageSupplier"
+	at net.minecraftforge.eventbus.EventBus.handleException(EventBus.java:316) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:307) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.common.ForgeHooks.onLivingAttack(ForgeHooks.java:345) ~[forge:?] {re:classloading}
+	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:991) ~[forge:?] {re:classloading}
+	at net.minecraft.entity.monster.MonsterEntity.attackEntityFrom(MonsterEntity.java:71) ~[forge:?] {re:classloading}
+	at net.minecraft.entity.player.PlayerEntity.attackTargetEntityWithCurrentItem(PlayerEntity.java:1167) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.entity.player.ServerPlayerEntity.attackTargetEntityWithCurrentItem(ServerPlayerEntity.java:1400) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.network.play.ServerPlayNetHandler.processUseEntity(ServerPlayNetHandler.java:1255) ~[forge:?] {re:classloading}
+	at net.minecraft.network.play.client.CUseEntityPacket.processPacket(CUseEntityPacket.java:89) ~[forge:?] {re:classloading}
+	at net.minecraft.network.play.client.CUseEntityPacket.processPacket(CUseEntityPacket.java:15) ~[forge:?] {re:classloading}
+	at net.minecraft.network.PacketThreadUtil.lambda$checkThreadAndEnqueue$0(PacketThreadUtil.java:19) ~[forge:?] {re:classloading}
+	at net.minecraft.util.concurrent.TickDelayedTask.run(TickDelayedTask.java:20) ~[forge:?] {re:classloading}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.run(ThreadTaskExecutor.java:139) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.util.concurrent.RecursiveEventLoop.run(RecursiveEventLoop.java:22) ~[forge:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:759) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:159) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.driveOne(ThreadTaskExecutor.java:109) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.driveOneInternal(MinecraftServer.java:742) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.driveOne(MinecraftServer.java:736) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.driveUntil(ThreadTaskExecutor.java:122) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.runScheduledTasks(MinecraftServer.java:722) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:668) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$startServer$0(MinecraftServer.java:233) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:750) [?:1.8.0_332] {}
+Caused by: java.lang.LinkageError: loader constraint violation: loader (instance of sun/misc/Launcher$AppClassLoader) previously initiated loading for a different type with name "org/apache/logging/log4j/util/MessageSupplier"
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_332] {}
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756) ~[?:1.8.0_332] {}
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142) ~[?:1.8.0_332] {}
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:473) ~[?:1.8.0_332] {}
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74) ~[?:1.8.0_332] {}
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369) ~[?:1.8.0_332] {}
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363) ~[?:1.8.0_332] {}
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_332] {}
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362) ~[?:1.8.0_332] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418) ~[?:1.8.0_332] {}
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352) ~[?:1.8.0_332] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351) ~[?:1.8.0_332] {}
+	... 25 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_332, Temurin
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Temurin
+	Memory: 704274472 bytes (671 MB) / 1860698112 bytes (1774 MB) up to 3803185152 bytes (3627 MB)
+	CPUs: 6
+	JVM Flags: 2 total; -XX:+IgnoreUnrecognizedVMOptions -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	ModLauncher: 8.1.3+8.1.3+main-8.1.x.c94d18ec
+	ModLauncher launch target: fmluserdevclient
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/mixin-0.8.4.jar mixin PLUGINSERVICE 
+		/eventbus-4.0.0.jar eventbus PLUGINSERVICE 
+		/forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-3.0.1.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.4.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16.3-launcher.jar fml TRANSFORMATIONSERVICE 
+	FML: 36.2
+	Forge: net.minecraftforge:36.2.26
+	FML Language Providers: 
+		javafml@36.2
+		minecraft@1
+	Mod List: 
+		client-extra.jar                                  |Minecraft                     |minecraft                     |1.16.5              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		forge-1.16.5-36.2.26_mapped_snapshot_20201028-1.16|Forge                         |forge                         |36.2.26             |DONE      |Manifest: NOSIGNATURE
+		main                                              |Quality Tools Updated         |quality_tools_updated         |1.0.0               |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 04440942-e0d0-4297-a800-595c9c5c2bc8
+	Player Count: 1 / 8; [ServerPlayerEntity['Dev'/307, l='ServerLevel[New World]', x=242.56, y=64.00, z=-186.97]]
+	Data Packs: vanilla, mod:forge, mod:quality_tools_updated
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'
